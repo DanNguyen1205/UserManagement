@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,13 +19,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCard, MatCardModule, 
     MatIconModule, MatButtonModule, 
     MatListModule, MatDividerModule,
-    FlexLayoutModule
+    FlexLayoutModule, CommonModule
   ],
   templateUrl: './userprofile.component.html',
   styleUrl: './userprofile.component.scss'
 })
 export class UserprofileComponent {
-  user: User;
+  user: any = null;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router){
   }
