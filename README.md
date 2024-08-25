@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
+## Setup Angular
+Setup Angular 17 with `npm install -g @angular/cli@17`. On windows further run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`.
+
 ## Install dependencies
 Run `npm install` to install project dependencies.
 
