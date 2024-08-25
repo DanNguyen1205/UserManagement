@@ -25,7 +25,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   styleUrl: './userprofile.component.scss'
 })
 export class UserprofileComponent {
-  user: any = null;
+  user: User;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router){
   }
