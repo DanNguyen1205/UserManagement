@@ -1,0 +1,36 @@
+.userProfileCard {
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+.circle-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 128px;
+    height: 100%; /* Set the height of the circle, should be equal to width */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+mat-card-title,
+mat-card-subtitle {
+  text-align: center;
+}
+
+mat-card-header {
+    justify-content: center;
+}
+
+/* Small tablets */
+@media only screen and (min-width: 768px) {
+    .userProfileCard {
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }  
+}
+

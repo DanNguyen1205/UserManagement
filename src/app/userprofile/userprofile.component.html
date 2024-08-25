@@ -1,0 +1,16 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="userProfileCard">
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="user-avatar"></div> -->
+      <mat-card-title>{{ user.first_name + " " + user.last_name }}</mat-card-title>
+      <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ "userid: " + user.id }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="circle-container">
+      <img mat-card-image src={{user.avatar}} alt="profile picture">
+    </div>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="goBackUserList()">Back to users list</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
